@@ -1,24 +1,94 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HomeWork6_Task2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xBE-Mk-1fx" customClass="CustomViewTabBar" customModule="HomeWork6_Task2" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="184"/>
+                                <color key="backgroundColor" systemColor="systemGray3Color"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xSI-Ng-dkS" customClass="CustomBackgroundView" customModule="HomeWork6_Task2" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="184" width="414" height="228"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fCX-n0-jUY" customClass="CustomMenuBlock" customModule="HomeWork6_Task2" customModuleProvider="target">
+                                <rect key="frame" x="20" y="332" width="374" height="195"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lUH-cw-RgO" customClass="CustomMenuBlock" customModule="HomeWork6_Task2" customModuleProvider="target">
+                                <rect key="frame" x="20" y="541" width="180" height="195"/>
+                                <color key="backgroundColor" systemColor="systemGrayColor"/>
+                            </view>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bWt-tB-KwU" customClass="CustomMenuBlock" customModule="HomeWork6_Task2" customModuleProvider="target">
+                                <rect key="frame" x="214" y="541" width="180" height="195"/>
+                                <color key="backgroundColor" systemColor="systemGrayColor"/>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.11372547600000001" green="0.11372547600000001" blue="0.11372547600000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fCX-n0-jUY" secondAttribute="trailing" constant="20" id="1MB-ih-MC9"/>
+                            <constraint firstItem="xSI-Ng-dkS" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="1a6-8f-28H"/>
+                            <constraint firstItem="bWt-tB-KwU" firstAttribute="top" secondItem="fCX-n0-jUY" secondAttribute="bottom" constant="14" id="1nM-X3-94I"/>
+                            <constraint firstItem="xBE-Mk-1fx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2zC-fd-3t7"/>
+                            <constraint firstItem="xBE-Mk-1fx" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="EIi-rz-fec"/>
+                            <constraint firstItem="xSI-Ng-dkS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="LyK-od-bF9"/>
+                            <constraint firstItem="lUH-cw-RgO" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.217634" id="MWw-mY-BtH"/>
+                            <constraint firstItem="xBE-Mk-1fx" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="QLL-Tm-Es1"/>
+                            <constraint firstItem="xSI-Ng-dkS" firstAttribute="top" secondItem="xBE-Mk-1fx" secondAttribute="bottom" id="SbB-Zu-fiY"/>
+                            <constraint firstItem="xBE-Mk-1fx" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.205357" id="T1q-wQ-RaN"/>
+                            <constraint firstItem="fCX-n0-jUY" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.217634" id="TX5-T2-bqi"/>
+                            <constraint firstItem="fCX-n0-jUY" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.903382" id="Wq8-Up-Zbm"/>
+                            <constraint firstItem="xBE-Mk-1fx" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="XJe-6X-lHp"/>
+                            <constraint firstItem="xSI-Ng-dkS" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.254464" id="ZI7-45-wQ4"/>
+                            <constraint firstItem="bWt-tB-KwU" firstAttribute="leading" secondItem="lUH-cw-RgO" secondAttribute="trailing" constant="14" id="dCL-jv-SnZ"/>
+                            <constraint firstItem="lUH-cw-RgO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="dGS-EM-QNJ"/>
+                            <constraint firstItem="xSI-Ng-dkS" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="e00-e3-Qxr"/>
+                            <constraint firstItem="fCX-n0-jUY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="eQt-J2-sCX"/>
+                            <constraint firstItem="lUH-cw-RgO" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.434783" id="gkv-Sn-oma"/>
+                            <constraint firstItem="fCX-n0-jUY" firstAttribute="top" secondItem="xBE-Mk-1fx" secondAttribute="bottom" constant="148" id="gtV-UI-afa"/>
+                            <constraint firstItem="lUH-cw-RgO" firstAttribute="top" secondItem="fCX-n0-jUY" secondAttribute="bottom" constant="14" id="mPD-bu-X8g"/>
+                            <constraint firstItem="bWt-tB-KwU" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.434783" id="q0B-lM-ow8"/>
+                            <constraint firstItem="bWt-tB-KwU" firstAttribute="leading" secondItem="lUH-cw-RgO" secondAttribute="trailing" constant="14" id="tog-7w-hai"/>
+                            <constraint firstItem="bWt-tB-KwU" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.217634" id="xXw-nd-Phe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bWt-tB-KwU" secondAttribute="trailing" constant="20" id="xlY-xh-BFD"/>
+                        </constraints>
                     </view>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="customViewTabBar" destination="xBE-Mk-1fx" id="hba-ga-JEM"/>
+                        <outlet property="firstCustomMenuBlock" destination="fCX-n0-jUY" id="Ab8-oY-TWF"/>
+                        <outlet property="secondCustomMenuBlock" destination="lUH-cw-RgO" id="3yI-oT-5Og"/>
+                        <outlet property="thirdCustomMenuBlock" destination="bWt-tB-KwU" id="f4N-MJ-eIQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="65.625"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

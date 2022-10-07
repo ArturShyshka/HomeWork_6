@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomViewTabBar" customModule="HomeWork6_Task2" customModuleProvider="target">
+            <connections>
+                <outlet property="dollarButton" destination="Smh-eB-U4l" id="TNg-Hf-Wgf"/>
+                <outlet property="euroButton" destination="0OL-nP-MOJ" id="YtZ-cx-eTJ"/>
+                <outlet property="tabBarView" destination="YSm-mi-oZu" id="zOM-h5-HLu"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="176"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YSm-mi-oZu">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="176"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0OL-nP-MOJ">
+                            <rect key="frame" x="208" y="89" width="191" height="59"/>
+                            <color key="backgroundColor" red="0.35376596449999997" green="0.41808775069999998" blue="0.48957639930000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="gray" title="Євро" subtitle="" cornerStyle="fixed">
+                                <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="euroButtonPressed:" destination="-1" eventType="touchUpInside" id="RPd-r5-XQp"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Smh-eB-U4l">
+                            <rect key="frame" x="15" y="89" width="191" height="59"/>
+                            <color key="backgroundColor" red="0.35376596449999997" green="0.41808775069999998" blue="0.48957639930000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="gray" title="Долар США">
+                                <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="dollarButtonPressed:" destination="-1" eventType="touchUpInside" id="N7W-rC-Jc9"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🇺🇸  36.65 / 37.50" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="btd-TB-MLr">
+                            <rect key="frame" x="33" y="120" width="141" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🇪🇺  37.35 / 38.18" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bu3-gJ-FOM">
+                            <rect key="frame" x="222" y="120" width="141" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ще" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AnM-R2-2ws">
+                            <rect key="frame" x="184.5" y="36" width="45" height="45"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.19690781830000001" green="0.2533705235" blue="0.3210381269" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="0OL-nP-MOJ" secondAttribute="trailing" constant="15" id="17u-E0-zbP"/>
+                        <constraint firstItem="AnM-R2-2ws" firstAttribute="width" secondItem="YSm-mi-oZu" secondAttribute="width" multiplier="0.108696" id="1WV-bW-2zs"/>
+                        <constraint firstAttribute="trailing" secondItem="0OL-nP-MOJ" secondAttribute="trailing" constant="15" id="Dus-2T-bsz"/>
+                        <constraint firstItem="0OL-nP-MOJ" firstAttribute="leading" secondItem="Smh-eB-U4l" secondAttribute="trailing" constant="2" id="Fdg-iM-nr7"/>
+                        <constraint firstItem="0OL-nP-MOJ" firstAttribute="baseline" secondItem="Smh-eB-U4l" secondAttribute="baseline" id="L7X-f4-N2K"/>
+                        <constraint firstAttribute="bottom" secondItem="Bu3-gJ-FOM" secondAttribute="bottom" constant="39" id="MAa-1I-FcI"/>
+                        <constraint firstItem="Bu3-gJ-FOM" firstAttribute="baseline" secondItem="btd-TB-MLr" secondAttribute="baseline" id="SMC-1L-KeW"/>
+                        <constraint firstItem="Bu3-gJ-FOM" firstAttribute="width" secondItem="0OL-nP-MOJ" secondAttribute="width" multiplier="0.581152" constant="30" id="UsB-Aa-JSY"/>
+                        <constraint firstItem="0OL-nP-MOJ" firstAttribute="top" secondItem="AnM-R2-2ws" secondAttribute="bottom" constant="8" symbolic="YES" id="WJg-rM-4Wj"/>
+                        <constraint firstItem="0OL-nP-MOJ" firstAttribute="leading" secondItem="btd-TB-MLr" secondAttribute="trailing" constant="34" id="WQM-wl-XU3"/>
+                        <constraint firstItem="0OL-nP-MOJ" firstAttribute="leading" secondItem="Smh-eB-U4l" secondAttribute="trailing" constant="2" id="Y5D-g4-5J2"/>
+                        <constraint firstItem="Bu3-gJ-FOM" firstAttribute="leading" secondItem="Smh-eB-U4l" secondAttribute="trailing" constant="16" id="aOl-oX-Um8"/>
+                        <constraint firstItem="AnM-R2-2ws" firstAttribute="height" secondItem="YSm-mi-oZu" secondAttribute="height" multiplier="0.255682" id="cHI-on-VMW"/>
+                        <constraint firstItem="Bu3-gJ-FOM" firstAttribute="height" secondItem="0OL-nP-MOJ" secondAttribute="height" multiplier="0.288136" id="hQK-JE-XvL"/>
+                        <constraint firstItem="btd-TB-MLr" firstAttribute="width" secondItem="Smh-eB-U4l" secondAttribute="width" multiplier="0.73822" id="hUa-4M-PZg"/>
+                        <constraint firstItem="Smh-eB-U4l" firstAttribute="height" secondItem="YSm-mi-oZu" secondAttribute="height" multiplier="0.335227" id="kIg-IJ-tRg"/>
+                        <constraint firstAttribute="bottom" secondItem="0OL-nP-MOJ" secondAttribute="bottom" constant="28" id="lB7-Ji-eVj"/>
+                        <constraint firstItem="AnM-R2-2ws" firstAttribute="centerX" secondItem="YSm-mi-oZu" secondAttribute="centerX" id="lIL-ww-4Ud"/>
+                        <constraint firstItem="0OL-nP-MOJ" firstAttribute="height" secondItem="YSm-mi-oZu" secondAttribute="height" multiplier="0.335227" id="mQF-rn-Qc6"/>
+                        <constraint firstItem="btd-TB-MLr" firstAttribute="height" secondItem="Smh-eB-U4l" secondAttribute="height" multiplier="0.288136" id="naf-TI-k2i"/>
+                        <constraint firstItem="Smh-eB-U4l" firstAttribute="width" secondItem="YSm-mi-oZu" secondAttribute="width" multiplier="0.461353" id="q3p-uR-nah"/>
+                        <constraint firstItem="0OL-nP-MOJ" firstAttribute="width" secondItem="YSm-mi-oZu" secondAttribute="width" multiplier="0.461353" id="xfx-4s-HOt"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="YSm-mi-oZu" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Bxk-rl-WKJ"/>
+                <constraint firstItem="YSm-mi-oZu" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="IRT-W0-rJP"/>
+                <constraint firstItem="YSm-mi-oZu" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="UTN-EO-ylL"/>
+                <constraint firstAttribute="trailing" secondItem="YSm-mi-oZu" secondAttribute="trailing" id="kCY-Fp-z4A"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="107" y="-141"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
